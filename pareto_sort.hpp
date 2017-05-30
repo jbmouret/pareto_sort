@@ -32,7 +32,7 @@ namespace pareto_sort {
     inline bool comp_fronts(const std::vector<vec_t<T>>& f2, const std::vector<vec_t<T>>& f1)
     {
         // we only need to compare f1 to the value of the last element of f2
-        if (f1[0].second.second < f2.back().second.second)
+        if (f1[0].second.second <= f2.back().second.second)
             return true;
         else
             return false;
