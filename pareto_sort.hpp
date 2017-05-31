@@ -15,8 +15,8 @@ namespace pareto_sort {
     {
         if (i1.second.first > i2.second.first)
             return true;
-        else if (i1.second.second < i2.second.second)
-            return false;
+        else if (i1.second.first == i2.second.first && i1.second.second > i2.second.second)
+            return true;
         return false;
     }
 
